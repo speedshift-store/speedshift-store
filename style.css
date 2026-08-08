@@ -43,7 +43,7 @@ header {
     min-width: 100%;
 
     margin: 0;
-    padding: 10px 15px 0;
+    padding: 5px 10px 0;
 
     background: #0b0b0b;
 
@@ -65,7 +65,7 @@ header {
 ================================================== */
 
 .logo {
-    width: 110px;
+    width: 90px;
 
     max-width: 50%;
 
@@ -73,7 +73,7 @@ header {
 
     display: block;
 
-    margin: 0 auto 3px;
+    margin: 0 auto 0;
 }
 
 
@@ -84,9 +84,9 @@ header {
 .tagline {
     color: #d4af37;
 
-    font-size: 12px;
+    font-size: 11px;
 
-    margin: 0 0 10px;
+    margin: 0 0 5px;
 }
 
 
@@ -103,9 +103,9 @@ header {
 
     align-items: center;
 
-    gap: 25px;
+    gap: 20px;
 
-    padding: 14px 5px;
+    padding: 8px 5px;
 
     margin: 0;
 
@@ -120,7 +120,7 @@ header {
 
     text-decoration: none;
 
-    font-size: 15px;
+    font-size: 14px;
 
     font-weight: bold;
 
@@ -133,7 +133,6 @@ header {
 .main-nav a:hover {
     color: #d4af37;
 }
-
 
 /* ==================================================
    HERO
