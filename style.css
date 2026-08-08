@@ -18,9 +18,12 @@ header {
     text-align: center;
 }
 
-header h1 {
-    font-size: 30px;
-    letter-spacing: 1px;
+.logo {
+    width: 220px;
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
 }
 
 header p {
