@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Speed Shift</title>
 
     <link rel="stylesheet" href="style.css">
@@ -10,123 +12,173 @@
 
 <body>
 
-    ```html
-<link rel="stylesheet" href="style.css">
+    <!-- Header -->
+    <header>
 
-<header>
-    <img src="./logo.png" alt="Speed Shift" class="logo">
-    <p>منتجات مختارة لحياة أسهل وأذكى</p>
+        <img src="./logo.png" alt="Speed Shift" class="logo">
 
-    <!-- القائمة الرئيسية -->
-    <nav class="main-nav">
-        <a href="#products">منتجاتنا</a>
-        <a href="#best-selling">الأكثر مبيعًا</a>
-        <a href="#offers">عروض وخصومات</a>
-        <a href="#about">نبذة عنا</a>
-        <a href="#contact">تواصل معنا</a>
-    </nav>
-</header>
+        <p>منتجات مختارة لحياة أسهل وأذكى</p>
 
-<main>
+        <!-- القائمة الرئيسية -->
+        <nav class="main-nav">
+            <a href="#products">منتجاتنا</a>
+            <a href="#best-selling">الأكثر مبيعًا</a>
+            <a href="#offers">عروض وخصومات</a>
+            <a href="#about">نبذة عنا</a>
+            <a href="#contact">تواصل معنا</a>
+        </nav>
 
-    <!-- القسم الرئيسي -->
-    <section class="hero">
-        <h2>اختار المنتج المناسب ليك</h2>
-        <p>منتجات عملية بجودة ممتازة وأسعار منافسة</p>
-    </section>
+    </header>
 
 
-    <!-- منتجاتنا -->
-    <section class="products" id="products">
-        <h2>منتجاتنا</h2>
+    <main>
 
-        <div class="product-card">
-            <div class="product-image">
-                صورة المنتج
+        <!-- القسم الرئيسي -->
+        <section class="hero">
+            <h2>اختار المنتج المناسب ليك</h2>
+
+            <p>
+                منتجات عملية بجودة ممتازة وأسعار منافسة
+            </p>
+        </section>
+
+
+        <!-- منتجاتنا -->
+        <section class="products" id="products">
+
+            <h2>منتجاتنا</h2>
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    صورة المنتج
+                </div>
+
+                <div class="product-info">
+
+                    <h3>منتج Speed Shift</h3>
+
+                    <p>
+                        تفاصيل المنتج هتظهر هنا
+                    </p>
+
+                    <div class="price">
+                        599 جنيه
+                    </div>
+
+                    <button onclick="orderProduct()">
+                        اطلب الآن
+                    </button>
+
+                </div>
+
             </div>
 
-            <div class="product-info">
-                <h3>منتج Speed Shift</h3>
-                <p>تفاصيل المنتج هتظهر هنا</p>
+        </section>
 
-                <div class="price">599 جنيه</div>
 
-                <button onclick="orderProduct()">
-                    اطلب الآن
-                </button>
+        <!-- الأكثر مبيعًا -->
+        <section class="products" id="best-selling">
+
+            <h2>
+                الأكثر مبيعًا 🔥
+            </h2>
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    صورة المنتج
+                </div>
+
+                <div class="product-info">
+
+                    <h3>
+                        المنتج الأكثر مبيعًا
+                    </h3>
+
+                    <p>
+                        اختيار عملائنا المفضل
+                    </p>
+
+                    <div class="price">
+                        599 جنيه
+                    </div>
+
+                    <button onclick="orderProduct()">
+                        اطلب الآن
+                    </button>
+
+                </div>
+
             </div>
-        </div>
-    </section>
+
+        </section>
 
 
-    <!-- الأكثر مبيعًا -->
-    <section class="products" id="best-selling">
-        <h2>الأكثر مبيعًا 🔥</h2>
+        <!-- العروض والخصومات -->
+        <section class="offers" id="offers">
 
-        <div class="product-card">
-            <div class="product-image">
-                صورة المنتج
-            </div>
+            <h2>
+                عروض وخصومات 🔥
+            </h2>
 
-            <div class="product-info">
-                <h3>المنتج الأكثر مبيعًا</h3>
-                <p>اختيار عملائنا المفضل</p>
+            <p>
+                استفيد من عروض Speed Shift قبل انتهاء الكمية!
+            </p>
 
-                <div class="price">599 جنيه</div>
+            <button onclick="orderProduct()">
+                استفيد من العرض
+            </button>
 
-                <button onclick="orderProduct()">
-                    اطلب الآن
-                </button>
-            </div>
-        </div>
-    </section>
+        </section>
 
 
-    <!-- العروض والخصومات -->
-    <section class="offers" id="offers">
-        <h2>عروض وخصومات 🔥</h2>
+        <!-- نبذة عنا -->
+        <section class="about" id="about">
 
-        <p>
-            استفيد من عروض Speed Shift قبل انتهاء الكمية!
-        </p>
+            <h2>
+                نبذة عنا
+            </h2>
 
-        <button onclick="orderProduct()">
-            استفيد من العرض
-        </button>
-    </section>
+            <p>
+                Speed Shift متجر إلكتروني بنقدم منتجات مختارة بعناية
+                تساعدك تخلي حياتك أسهل وأذكى، بجودة ممتازة وأسعار منافسة.
+            </p>
 
-
-    <!-- نبذة عنا -->
-    <section class="about" id="about">
-        <h2>نبذة عنا</h2>
-
-        <p>
-            Speed Shift متجر إلكتروني بنقدم منتجات مختارة بعناية
-            تساعدك تخلي حياتك أسهل وأذكى، بجودة ممتازة وأسعار منافسة.
-        </p>
-    </section>
+        </section>
 
 
-    <!-- تواصل معنا -->
-    <section class="contact" id="contact">
-        <h2>تواصل معنا</h2>
+        <!-- تواصل معنا -->
+        <section class="contact" id="contact">
 
-        <p>عندك استفسار أو عايز تطلب منتج؟ تواصل معانا.</p>
+            <h2>
+                تواصل معنا
+            </h2>
 
-        <button onclick="orderProduct()">
-            تواصل معنا
-        </button>
-    </section>
+            <p>
+                عندك استفسار أو عايز تطلب منتج؟ تواصل معانا.
+            </p>
 
-</main>
+            <button onclick="orderProduct()">
+                تواصل معنا
+            </button>
+
+        </section>
+
+    </main>
 
 
-<footer>
-    © 2026 Speed Shift - جميع الحقوق محفوظة
-</footer>
+    <!-- Footer -->
+    <footer>
 
-<script src="script.js"></script>
-```
+        © 2026 Speed Shift - جميع الحقوق محفوظة
+
+    </footer>
+
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
+```
