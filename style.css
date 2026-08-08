@@ -1,3 +1,4 @@
+```css
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,10 +12,15 @@ body {
     line-height: 1.7;
 }
 
+
+/* =========================
+   HEADER
+========================= */
+
 header {
     background: #0b0b0b;
     color: white;
-    padding: 10px 15px;
+    padding: 10px 15px 0;
     text-align: center;
 }
 
@@ -30,6 +36,41 @@ header p {
     color: #d4af37;
     font-size: 12px;
 }
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+
+    margin-top: 12px;
+    padding: 12px 5px;
+
+    border-top: 1px solid #333;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.main-nav a:hover {
+    color: #d4af37;
+}
+
+
+/* =========================
+   HERO
+========================= */
 
 .hero {
     background: white;
@@ -47,6 +88,11 @@ header p {
     font-size: 17px;
 }
 
+
+/* =========================
+   PRODUCTS
+========================= */
+
 .products {
     max-width: 1100px;
     margin: 30px auto;
@@ -58,21 +104,28 @@ header p {
     margin-bottom: 25px;
 }
 
+
+/* Product Card */
+
 .product-card {
     background: white;
     max-width: 350px;
     margin: auto;
+
     border-radius: 15px;
     overflow: hidden;
+
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 }
 
 .product-image {
     height: 250px;
     background: #eee;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     color: #888;
 }
 
@@ -93,16 +146,27 @@ header p {
     margin: 10px 0;
 }
 
+
+/* =========================
+   BUTTON
+========================= */
+
 button {
     width: 100%;
     border: none;
+
     background: #222;
     color: white;
+
     padding: 13px;
     border-radius: 8px;
+
     font-size: 17px;
     cursor: pointer;
+
     margin-top: 15px;
+
+    transition: 0.3s;
 }
 
 button:hover {
@@ -110,10 +174,139 @@ button:hover {
     color: #222;
 }
 
+
+/* =========================
+   OFFERS
+========================= */
+
+.offers {
+    background: #0b0b0b;
+    color: white;
+
+    text-align: center;
+
+    padding: 60px 20px;
+    margin-top: 40px;
+}
+
+.offers h2 {
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+
+.offers p {
+    color: #ddd;
+}
+
+.offers button {
+    max-width: 300px;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    background: white;
+
+    max-width: 900px;
+    margin: 40px auto;
+
+    padding: 50px 25px;
+
+    text-align: center;
+
+    border-radius: 15px;
+}
+
+.about h2 {
+    margin-bottom: 15px;
+}
+
+.about p {
+    color: #666;
+    line-height: 2;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact h2 {
+    margin-bottom: 15px;
+}
+
+.contact p {
+    color: #666;
+}
+
+.contact button {
+    max-width: 300px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
 footer {
     margin-top: 50px;
+
     background: #222;
     color: white;
+
     text-align: center;
+
     padding: 25px;
 }
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .logo {
+        width: 100px;
+    }
+
+    .main-nav {
+        gap: 5px;
+        flex-wrap: wrap;
+        padding: 10px 0;
+    }
+
+    .main-nav a {
+        font-size: 13px;
+        padding: 4px 7px;
+    }
+
+    .hero {
+        padding: 40px 15px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .products {
+        padding: 15px;
+    }
+
+    .product-card {
+        max-width: 100%;
+    }
+}
+```
